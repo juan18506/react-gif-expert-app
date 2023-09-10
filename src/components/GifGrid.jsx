@@ -6,14 +6,14 @@ export const GifGrid = ({ category }) => {
   const { images, isLoading } = useFetchGifs( category );
 
   return (
-    <>
+    <section>
       <h3>{ category }</h3>
 
       {
         isLoading && ( <Loading /> )
       }
       
-      <ol className="card-grid">
+      <ul className="card-grid">
         {
           images.map(( image ) => (
             <GifItem 
@@ -22,7 +22,7 @@ export const GifGrid = ({ category }) => {
             />
           ))
         }
-      </ol>
-    </>
+      </ul>
+    </section>
   );
 }
