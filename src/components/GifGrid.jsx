@@ -1,4 +1,4 @@
-import { GifItem } from './GifItem';
+import { GifItem, Loading } from '../components';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 
 export const GifGrid = ({ category }) => {
@@ -10,7 +10,7 @@ export const GifGrid = ({ category }) => {
       <h3>{ category }</h3>
 
       {
-        isLoading && ( <h2>Loading...</h2> )
+        isLoading && ( <Loading /> )
       }
       
       <ol className="card-grid">
