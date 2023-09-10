@@ -20,7 +20,7 @@ export const GifExpertApp = () => {
       />
 
       {
-        categories.map( ( category ) => (
+        categories.map(( category ) => (
           <GifGrid 
             key={ category } 
             category={ category }
