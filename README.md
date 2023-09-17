@@ -44,11 +44,11 @@ pnpm install
 When installation is complete, run :
 
 ```
-pnpm run dev
+pnpm dev
 ```
 
 To run tests:
 
 ```
-pnpm run test
+pnpm test
 ```
